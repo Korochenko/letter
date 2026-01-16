@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="letter.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="envelope-wrapper flap">
+        <div class="envelope">
+          <div class="letter">
+            <div class="text">
+              <strong>Ту май сонечкко</strong>
+              <p>
+                Запрошую мою <i>касуню</i> на ківусю. Завтра на 14.00.
+                Як вдягнутися? Максимально тепло!!!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="heart"></div>
+      </div>
+    </div>
+
+    <script>
+      const envelope = document.querySelector('.envelope-wrapper');
+      const heart = document.querySelector('.heart');
+      heart.addEventListener("click", () => {
+        envelope.classList.toggle("flap")
+      })
+    </script>
+  </body>
+</html>
